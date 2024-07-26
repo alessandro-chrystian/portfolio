@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: "Courier Prime", monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 5%;
+}
+
+.light-mode::-webkit-scrollbar {
+    width: 10px;
+    background-color: #ecedf3;
+}
+
+.light-mode::-webkit-scrollbar-thumb {
+    background-color: #31364e;
+    border-radius: 10px;
+}
+
+.dark-mode::-webkit-scrollbar {
+    width: 10px;
+    background-color: #14161f;
+}
+
+.dark-mode::-webkit-scrollbar-thumb {
+    background-color: #d8dae6;
+    border-radius: 10px;
+}
+
+.arrow-down {
+    animation: upAndDown 1.8s infinite;
+}
+
+@keyframes upAndDown {
+    0% {
+        bottom: 12px;
+    }
+    50% {
+        bottom: 0px;
+    }
+    100%{
+        bottom: 12px;
+    }
+}

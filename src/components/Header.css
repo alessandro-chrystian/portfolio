@@ -1,0 +1,66 @@
+.hamburguer {
+    width: 20px;
+    height: 3px;
+    background-color: #3855d8;
+    position: relative;
+    transition: 0.5s;
+}
+
+.hamburguer::before,
+.hamburguer::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: #3855d8;
+    transition: 0.5s;
+}
+
+.hamburguer::before {
+    top: -8px;
+}
+
+.hamburguer::after {
+    top: 8px;
+}
+
+.icon.iconActive .hamburguer {
+    background-color: transparent;
+}
+
+.icon.iconActive .hamburguer::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.icon.iconActive .hamburguer::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.mobile-menu {
+    animation: openMenu 0.7s forwards;
+}
+
+
+@keyframes openMenu {
+    from {
+        right: -100%;
+    }
+    to {
+        right: 0%;
+    }
+}
+
+.border-on-hover:hover::before {
+    animation: onHover .4s forwards;
+}
+
+@keyframes onHover {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
