@@ -53,7 +53,7 @@ function App() {
     window.addEventListener('scroll', toggleVisibility)
 
     return () => {
-      removeEventListener("scroll", toggleVisibility)
+      window.removeEventListener("scroll", toggleVisibility)
     }
   }, [])
 
@@ -77,7 +77,7 @@ function App() {
     window.addEventListener('scroll', handleScroll)
 
     return () => {
-      removeEventListener('scroll', handleScroll)
+      window.removeEventListener('scroll', handleScroll)
     }
 
   }, [])

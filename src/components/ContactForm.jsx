@@ -30,7 +30,6 @@ function ContactForm(props) {
                 message: ''
             })
         }, (error) => {
-            console.log(error)
             alert('Erro ao enviar a mensagem.')
         })
     }
@@ -39,15 +38,15 @@ function ContactForm(props) {
         <form onSubmit={handleSubmit} className={`${props.isDark ? "bg-dark-foreground border-dark-border" : "bg-primary-content border-border"} flex flex-col justify-between gap-5 p-5 rounded-xl border`}>
             <div className='flex items-center gap-2'>
                 <label htmlFor="name">Nome:</label>
-                <input onChange={handleChange} value={formData.name} type='text' id='name' name="name" placeholder='Digite seu nome' className={`flex-grow border p-2 rounded-md ${props.isDark ? "bg-dark-background border-dark-border" : "bg-background border-border"}`} required />
+                <input onChange={handleChange} value={formData.name} type='text' id='name' name="name" placeholder='Digite seu nome' className={`flex-grow w-1/2 border p-2 rounded-md ${props.isDark ? "bg-dark-background border-dark-border" : "bg-background border-border"}`} required />
             </div>
             <div className='flex items-center gap-2'>
                 <label htmlFor='email'>E-mail:</label>
-                <input onChange={handleChange} value={formData.email} type="email" id="email" name="email" placeholder='Digite seu email' className={`flex-grow p-2 border ${props.isDark ? "bg-dark-background border-dark-border" : "bg-background border-border"} p-1 rounded-md`} required />
+                <input onChange={handleChange} value={formData.email} type="email" id="email" name="email" placeholder='Digite seu email' className={`flex-grow w-1/2 p-2 border ${props.isDark ? "bg-dark-background border-dark-border" : "bg-background border-border"} p-1 rounded-md`} required />
             </div>
-            <div className='flex items-center gap-2'>
-                <label htmlFor='email'>Número:</label>
-                <input onChange={handleChange} value={formData.number} type="tel" id="number" name="number" placeholder='Digite seu número' className={`flex-grow p-2 border ${props.isDark ? "bg-dark-background border-dark-border" : "bg-background border-border"} p-1 rounded-md`} required />
+            <div className='flex items-center justify-between gap-2'>
+                <label htmlFor='email'>Celular:</label>
+                <input onChange={handleChange} value={formData.number} type="tel" id="number" name="number" placeholder='Digite seu número' className={`flex-grow w-1/2 p-2 border ${props.isDark ? "bg-dark-background border-dark-border" : "bg-background border-border"} p-1 rounded-md`} required />
             </div>
             <div className='flex items-center gap-2'>
                 <label htmlFor="message">Messagem:</label>

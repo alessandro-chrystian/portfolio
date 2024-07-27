@@ -1,7 +1,7 @@
 import React from 'react';
 import CardService from './CardService';
 
-import { faGear, faGlobe, faScrewdriverWrench, faHeadset } from '@fortawesome/free-solid-svg-icons';
+import { faGlobe, faScrewdriverWrench, faHeadset } from '@fortawesome/free-solid-svg-icons';
 
 function Services(props){
     return (
