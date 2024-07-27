@@ -3,6 +3,8 @@ import CardPortfolio from './CardPortfolio';
 import { faBootstrap, faCss3Alt, faHtml5, faJs } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import devBurguer from '../assets/images/dev-burguer.png'
+import appDukeza from '../assets/images/app-dukeza.png'
+import pythonTipsCode from '../assets/images/curso-python-tipscode.png'
 
 const devBurguerSkills = [
     {
@@ -66,10 +68,10 @@ function Portfolio(props) {
             <CardPortfolio title="Dev Burger" paragraph="Uma Hamburgueria 100% funcional, onde se é possível realizar pedidos, colocar o seu endereço para a entrega do lanche e entrar em contato com o whatsapp da hamburgueria." projectImg={devBurguer} projectLink="https://project-burger-place.vercel.app/" isDark={props.isDark} skillsUsed={devBurguerSkills.map((icon, idx) => {
                 return (<li className={`hover:transition hover:duration-500 ${icon.iconOnHover}`} key={idx}><FontAwesomeIcon icon={icon.icon} /></li>)
             })} />
-            <CardPortfolio fadeRight reverse isDark={props.isDark} title="App Dukeza" paragraph="Uma landing page responsiva para divulgação de uma loja apropriada para gatinhos de estimação" skillsUsed={catLandingPageSkills.map((icon, idx) => {
+            <CardPortfolio fadeRight reverse isDark={props.isDark} title="App Dukeza" paragraph="Uma landing page responsiva para divulgação de uma loja apropriada para gatinhos de estimação." projectImg={appDukeza} projectLink="https://alessandro-chrystian.github.io/app-dukeza/" skillsUsed={catLandingPageSkills.map((icon, idx) => {
                 return (<li className={`hover:transition hover:duration-500 ${icon.iconOnHover}`} key={idx}><FontAwesomeIcon icon={icon.icon} /></li>)
             })} />
-            <CardPortfolio isDark={props.isDark} title="Curso de Python TipsCode" paragraph={`Página real do curso de Python da Tipscode, onde fui escolhido para fazer parte do time de desenvolvimento do site. Fiquei responsável pelas partes do Hero, Conteúdo e Depoimentos.`} inDev skillsUsed={pythonCourseSkills.map((icon, idx) => {
+            <CardPortfolio isDark={props.isDark} title="Curso de Python TipsCode" paragraph={`Página real do curso de Python da Tipscode, onde fui escolhido para fazer parte do time de desenvolvimento do site. Fiquei responsável pelas partes do Hero, Conteúdo e Depoimentos.`} projectImg={pythonTipsCode} inDev skillsUsed={pythonCourseSkills.map((icon, idx) => {
                 return (<li className={`hover:transition hover:duration-500 ${icon.iconOnHover}`} key={idx}><i className={icon.icon}></i></li>)
             })} />
         </section>
