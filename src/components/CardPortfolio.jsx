@@ -11,7 +11,10 @@ function CardPortfolio(props){
                     <ul className='text-3xl w-[40%] lg:w-fit flex flex-wrap gap-2'>
                         {props.skillsUsed}
                     </ul>
-                    <a href={props.projectLink} target="_blank" className='bg-primary-light font-bold p-2 w-fit rounded-lg'>{props.inDev ? "EM BREVE" : "ACESSE O SITE"}</a>
+                    {
+                        props.inDev ? <span className='bg-primary-light font-bold p-2 w-fit rounded-lg'>EM BREVE</span> : <a href={props.projectLink} target="_blank" className='bg-primary-light font-bold p-2 w-fit rounded-lg'>ACESSE O SITE</a>
+                    }
+                    
                 </div>
             </div>
             <div>

@@ -88,7 +88,7 @@ function App() {
       <ParticlesComponent isDark={isDark} />
       <span onClick={scrollToTop} className={`to-top fixed ${isVisible ? "opacity-50 hover:opacity-100" : "hidden"} z-10 right-8 bottom-40 bg-dark-border w-10 h-10 flex items-center justify-center text-primary-content rounded-full`}><FontAwesomeIcon icon={faArrowUp} /></span>
       {
-        arrowDownIsVisible ? <div className="flex justify-center items-center">
+        arrowDownIsVisible ? <div className="hidden md:flex justify-center items-center">
         <span className={`fixed bottom-[-5px] ${isDark ? "bg-dark-border" : "bg-border"} w-full blur-sm h-[10%] opacity-95 z-10 $`}></span>
         <span className={`arrow-down z-10 fixed bottom-[10px] ${isDark ? "text-border" : "text-dark-border"} text-4xl fixed`}><FontAwesomeIcon icon={faArrowDown} /></span>
       </div> : null
