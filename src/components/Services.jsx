@@ -6,7 +6,7 @@ import { faGlobe, faScrewdriverWrench, faHeadset } from '@fortawesome/free-solid
 function Services(props){
     return (
         <section className='flex items-center container mx-auto flex-col gap-5' id="services">
-            <h2 className='text-5xl'>Services</h2>
+            <h2 className='text-5xl'>Serviços</h2>
             <p className='text-center text-xl mb-5'>Confira o que eu posso fazer para você!</p>
             <div data-aos="flip-up" className='grid grid-cols-1 mx-[5%] lg:grid-cols-3 text-center gap-10 gap-y-14 mb-10'>
                 <CardService icon={faHeadset} title="Suporte Técnico" paragraph="Ofereço o meu suporte técnico, onde eu estarei atendendo suas demandas para garantir que seu site funcione de forma eficiente e de acordo com o que você deseja." isDark={props.isDark} />

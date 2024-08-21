@@ -3,6 +3,7 @@ import '../components/Header.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import MenuNav from "./MenuNav";
+import curriculo from '../assets/CV.Alessandro.SuporteTécnicodeInformática.2024.pdf'
 
 function Header(props) {
     const [active, setMode] = useState(false)
@@ -40,7 +41,7 @@ function Header(props) {
                 <span><FontAwesomeIcon icon={faMoon} /></span>
             </div>
             <div>
-                <a href="#" className="bg-secondary-dark font-bold p-2 rounded-lg text-primary-content">Currículo</a>
+                <a href={curriculo} target="_blank" className="bg-secondary-dark font-bold p-2 rounded-lg text-primary-content">Currículo</a>
             </div>
             <div className={active ? "block sm:hidden icon iconActive" : "icon sm:hidden"} onClick={toggleMode}>
                 <div className="hamburguer hamburguerIcon">
