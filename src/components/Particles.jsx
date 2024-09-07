@@ -88,7 +88,7 @@ const ParticlesComponent = (props) => {
   );
 
 
-  return <Particles className="-z-10 absolute opacity-30" init={particlesLoaded} options={options} />; 
+  return <Particles className="-z-10 hidden md:block absolute opacity-30" init={particlesLoaded} options={options} />; 
 };
 
 export default ParticlesComponent;
