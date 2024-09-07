@@ -32,7 +32,7 @@ function Header(props) {
     }, [])
 
     return (
-        <header ref={headerRef} className={`transition duration-300 flex top-0 justify-between items-center p-5 ${headerIsFixed ? `fixed ${props.isDark ? "bg-dark-background border-border" : "bg-background border-dark-border"} w-full z-10 opacity-80 border-b` : "relative"} lg:px-[8%]`}>
+        <header ref={headerRef} className={`transition duration-300 flex top-0 justify-between items-center p-5 ${headerIsFixed ? `md:fixed ${props.isDark ? "bg-dark-background border-border" : "bg-background border-dark-border"} w-full z-10 opacity-80 border-b` : "relative"} lg:px-[8%]`}>
            <span className="text-xl font-bold">Ale.Dev</span>
             <MenuNav />
             <div onClick={props.togglePageView} className="relative flex items-center gap-2">
