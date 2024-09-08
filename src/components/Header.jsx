@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useRef} from "react";
 import '../components/Header.css'
-import logo from '../assets/images/logo.png'
+import logo from '../assets/images/social-logo.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import MenuNav from "./MenuNav";
