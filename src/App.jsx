@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import socialLogo from './assets/images/social-logo.png'
 import Aos from 'aos'
 import 'aos/dist/aos.css';
 import Header from './components/Header'
@@ -85,7 +86,8 @@ function App() {
 
   return (
     <>
-      <MetaTags />      
+      <MetaTags /> 
+      <img href={socialLogo} alt="Minha marca" className='hidden'></img>     
       <div className={`w-full h-full relative z-50 transition-all duration-500 ${isDark ? "bg-dark-background text-dark-copy" : "bg-background text-copy"} overflow-hidden`}>
       <ParticlesComponent isDark={isDark} />
       <span onClick={scrollToTop} className={`to-top fixed ${isVisible ? "opacity-50 hover:opacity-100" : "hidden"} z-10 right-8 bottom-40 bg-dark-border w-10 h-10 flex items-center justify-center text-primary-content rounded-full`}><FontAwesomeIcon icon={faArrowUp} /></span>
