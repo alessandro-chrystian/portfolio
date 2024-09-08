@@ -1,9 +1,10 @@
 import React, {useState, useEffect, useRef} from "react";
 import '../components/Header.css'
+import logo from '../assets/images/logo.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import MenuNav from "./MenuNav";
-import curriculo from '../assets/CV.Alessandro.SuporteTécnicodeInformática.2024.pdf'
+import curriculo from '../assets/CV.Alessandro.SuporteTécnicodeInformática.2024.pdf';
 
 function Header(props) {
     const [active, setMode] = useState(false)
@@ -33,7 +34,7 @@ function Header(props) {
 
     return (
         <header ref={headerRef} className={`transition duration-300 flex top-0 justify-between items-center p-5 ${headerIsFixed ? `md:fixed ${props.isDark ? "bg-dark-background border-border" : "bg-background border-dark-border"} w-full z-10 opacity-80 border-b` : "relative"} lg:px-[8%]`}>
-           <span className="text-xl font-bold">Ale.Dev</span>
+           <img src={logo} alt="Logo da minha marca"></img>
             <MenuNav />
             <div onClick={props.togglePageView} className="relative flex items-center gap-2">
                 <span><FontAwesomeIcon icon={faSun} /></span>
