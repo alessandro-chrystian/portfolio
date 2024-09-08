@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import socialLogo from '../assets/images/social-logo.png'
 
-const socialLogoUrl = 'https://www.aledev.com.br/assets/social-logo.png'
+const socialLogoUrl = 'https://www.aledev.com.br/assets/social-logo-inS7Ky25.png'
 
 const MetaTags = () => {
   return (
