@@ -11,7 +11,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import Hero from './components/Hero'
 import ParticlesComponent from './components/Particles'
-import MetaTags from './components/MetaTags';
 
 function App() {
 
@@ -84,8 +83,7 @@ function App() {
   }, [])
 
   return (
-    <>
-      <MetaTags />   
+    <> 
       <div className={`w-full h-full relative z-50 transition-all duration-500 ${isDark ? "bg-dark-background text-dark-copy" : "bg-background text-copy"} overflow-hidden`}>
       <ParticlesComponent isDark={isDark} />
       <span onClick={scrollToTop} className={`to-top fixed ${isVisible ? "opacity-50 hover:opacity-100" : "hidden"} z-10 right-8 bottom-40 bg-dark-border w-10 h-10 flex items-center justify-center text-primary-content rounded-full`}><FontAwesomeIcon icon={faArrowUp} /></span>
