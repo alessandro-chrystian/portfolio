@@ -10,7 +10,7 @@ const MetaTags = () => {
         <meta name="keywords" content="Portfolio, Developer, Freelancer, Front-end, Web, criação de sites, programação" />
         <meta property="og:title" content="Ale.Dev - Portfolio Desenvolvedor Web" />
         <meta property="og:url" content="https://www.aledev.com.br" />
-        <meta property="og:image" content="https://www.aledev.com.br/assets/social-logo-inS7Ky25.png" />
+        <meta property="og:image" content="https://www.aledev.com.br/assets/logo-BHjp2EfD.png" />
         <meta property="ogimage:type" content="Logo do Ale Dev" />
         <meta property="og:type" content="website" />
     </Helmet>
