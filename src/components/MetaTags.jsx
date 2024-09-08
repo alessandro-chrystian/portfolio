@@ -13,9 +13,6 @@ const MetaTags = () => {
         <meta property="og:url" content="https://www.aledev.com.br" />
         <meta property="og:image" content={socialLogoUrl} />
         <meta property="ogimage:type" content="Logo do Ale Dev" />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="500" />
-        <meta property="og:image:height" content="500" />
         <meta property="og:type" content="website" />
     </Helmet>
   )
