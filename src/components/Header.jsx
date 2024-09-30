@@ -4,7 +4,7 @@ import logo from '../assets/images/logo.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import MenuNav from "./MenuNav";
-import curriculo from '../assets/CV.Alessandro.SuporteTécnicodeInformática.2024.pdf';
+import curriculo from '../assets/CV.Alessandro.Programador.pdf';
 
 function Header(props) {
     const [active, setMode] = useState(false)
@@ -38,7 +38,7 @@ function Header(props) {
             <MenuNav />
             <div onClick={props.togglePageView} className="relative flex items-center gap-2">
                 <span><FontAwesomeIcon icon={faSun} /></span>
-                <span className={`before:transition-all before:duration-300 w-[35px] h-[18px] border border-2 rounded-xl relative bottom-[1px] before:absolute before:w-[12px] before:h-[12px] before:border before:border-2 ${props.isDark ? "before:left-[17px]" : "before:left-[2px]"} before:top-[1px] before:rounded-full`}></span>
+                <span className={`before:transition-all before:duration-300 w-[35px] h-[18px] border-2 rounded-xl relative bottom-[1px] before:absolute before:w-[12px] before:h-[12px] before:border-2 ${props.isDark ? "before:left-[17px]" : "before:left-[2px]"} before:top-[1px] before:rounded-full`}></span>
                 <span><FontAwesomeIcon icon={faMoon} /></span>
             </div>
             <div>
