@@ -71,8 +71,8 @@ function Portfolio(props) {
             <CardPortfolio fadeRight reverse isDark={props.isDark} title="App Dukeza" paragraph="Uma Landing Page responsiva que tem como foco proporcionar para o cliente a adoção de gatos e planos exclusivos referentes a adoções. Feito com base no curso FullStack Turbo - TipsCode" projectImg={appDukeza} projectLink="https://alessandro-chrystian.github.io/app-dukeza/" skillsUsed={catLandingPageSkills.map((icon, idx) => {
                 return (<li className={`hover:transition hover:duration-500 ${icon.iconOnHover}`} key={idx}><FontAwesomeIcon icon={icon.icon} /></li>)
             })} />
-            <CardPortfolio isDark={props.isDark} title="Curso de Python TipsCode" paragraph={`Página real do curso de Python da Tipscode, onde fui escolhido para fazer parte do time de desenvolvimento do site. Fiquei responsável pelas partes do Hero, Conteúdo e Depoimentos.`} projectImg={pythonTipsCode} inDev skillsUsed={pythonCourseSkills.map((icon, idx) => {
-                return (<li className={`hover:transition hover:duration-500 ${icon.iconOnHover}`} key={idx}><i className={icon.icon}></i></li>)
+            <CardPortfolio isDark={props.isDark} title="Curso de Python TipsCode" paragraph={`Página real do curso de Python da Tipscode, onde fui escolhido para fazer parte do time de desenvolvimento do site. Fiquei responsável pelas partes do Hero, Conteúdo e Depoimentos.`} projectImg={pythonTipsCode} projectLink="https://tipscode.com.br/curso-python-turbo" skillsUsed={pythonCourseSkills.map((icon, idx) => {
+                return (<li className={`hover:transition hover:duration-500 text-4xl ${icon.iconOnHover}`} key={idx}><i className={icon.icon}></i></li>)
             })} />
         </section>
     )
